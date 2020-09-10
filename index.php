@@ -13,18 +13,21 @@ function adalah: sebuah kelakukan yang bisa dilakukan oleh class tsb
 
  -->
 
-<? php 
+<?php
 
-class Mobil {
+class Mobil
+{
     public $merek, $tipe, $mesin, $max_speed;
 
     // pada Variabel scope harus menggunakan $this untuk memanggil variabel luar
-    public function cetakTipe(){
+    public function cetakTipe()
+    {
         return $this->tipe;
     }
 
-    function kecepatanMaksimal(){
-        return "Kecepatan maksimal dari mobil ini adalah : ".$this->max_speed;
+    function kecepatanMaksimal()
+    {
+        return "Kecepatan maksimal dari mobil ini adalah : " . $this->max_speed;
     }
 }
 
@@ -34,5 +37,5 @@ $bmw->tipe = "320i";
 $bmw->mesin = "2000cc";
 $bmw->max_speed = "280km/h";
 
-echo "Tipe ".$bmw->cetakTipe();
-echo "Tipe BMW mempunyai: ".$bmw->kecepatanMaksimal();
+
+echo "Tipe BMW mempunyai: " . $bmw->kecepatanMaksimal();
